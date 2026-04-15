@@ -1,0 +1,142 @@
+.search-results {
+  padding: 100px 40px 40px 40px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #141414 0%, #1a1a1a 100%);
+  color: white;
+}
+
+.search-results h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: white;
+  border-left: 4px solid #e50914;
+  padding-left: 20px;
+}
+
+.results-loading, .results-error, .results-empty {
+  text-align: center;
+  padding: 80px 20px;
+  font-size: 1.2rem;
+  color: #aaa;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  margin-top: 40px;
+}
+
+.results-loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.result-card {
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  background: #1a1a1a;
+  position: relative;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.result-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,0.8) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.result-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(229, 9, 20, 0.3);
+}
+
+.result-card:hover::before {
+  opacity: 1;
+}
+
+.result-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.result-card:hover img {
+  transform: scale(1.05);
+}
+
+.result-info {
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+  background: linear-gradient(to top, #1a1a1a 0%, rgba(26,26,26,0.9) 100%);
+}
+
+.result-info h3 {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.3s ease;
+}
+
+.result-card:hover .result-info h3 {
+  color: #e50914;
+}
+
+.result-info span {
+  color: #ffd700;
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .search-results {
+    padding: 80px 20px 30px 20px;
+  }
+  
+  .search-results h2 {
+    font-size: 1.5rem;
+    padding-left: 15px;
+  }
+  
+  .results-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+  
+  .result-card img {
+    height: 220px;
+  }
+  
+  .result-info h3 {
+    font-size: 0.85rem;
+  }
+  
+  .result-info span {
+    font-size: 0.75rem;
+  }
+}
