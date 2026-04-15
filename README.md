@@ -15,6 +15,10 @@ Um clone da interface da Netflix desenvolvido com React, consumindo a API do TMD
 ## 🎥 Demonstração do Netflix Clone
 
 
+https://github.com/user-attachments/assets/2c157f5c-08e0-4b9a-a200-44ebe34a5535
+
+
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **React 18** - Biblioteca para construção da UI
