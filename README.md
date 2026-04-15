@@ -125,5 +125,3 @@ const API_KEY = 'sua_chave_aqui';
 ## 👨‍💻 Autor
 
 Desenvolvido por **edufl**
-
-
