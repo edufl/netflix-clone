@@ -74,29 +74,29 @@ netflix-clone/
 ---
 ## 🎯 Funcionalidades em Detalhe
 **🏠 Página Inicial**
--Banner com filme em destaque
--Linhas de categorias (Originais Netflix, Em Alta, Ação, Comédia, etc.)
--Scroll horizontal nos cards
+- Banner com filme em destaque
+- Linhas de categorias (Originais Netflix, Em Alta, Ação, Comédia, etc.)
+- Scroll horizontal nos cards
 
 **🔍 Busca**
--Pesquisa por filmes, séries e atores
--Página de resultados com grid responsivo
--Clique nos resultados abre modal com detalhes
+- Pesquisa por filmes, séries e atores
+- Página de resultados com grid responsivo
+- Clique nos resultados abre modal com detalhes
 
 **📋 Minha Lista**
--Adicione filmes à sua lista personalizada
--Remova filmes diretamente da lista
--Persistência com localStorage
+- Adicione filmes à sua lista personalizada
+- Remova filmes diretamente da lista
+- Persistência com localStorage
 
 **👤 Perfil**
--Escolha entre 5 avatares diferentes
--Edite seu nome de usuário
--Dados salvos no localStorage
+- Escolha entre 5 avatares diferentes
+- Edite seu nome de usuário
+- Dados salvos no localStorage
 
 **🎬 Modal de Detalhes**
--Informações completas do filme
--Botão Play para assistir trailer
--Botão para adicionar/remover da lista
+- Informações completas do filme
+- Botão Play para assistir trailer
+- Botão para adicionar/remover da lista
 
 ---
 ## ⚙️ Como rodar o projeto
