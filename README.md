@@ -11,7 +11,6 @@ Um clone da interface da Netflix desenvolvido com React, consumindo a API do TMD
 - 📋 **Minha Lista** - Adicione e remova filmes da sua lista personalizada (salva no localStorage)
 - 👤 **Perfil Personalizado** - Escolha seu avatar e edite seu nome
 - ▶️ **Trailers** - Assista trailers dos filmes diretamente no YouTube
-- 📱 **Design Responsivo** - Interface adaptada para mobile, tablet e desktop
 - 🎨 **UI Moderna** - Animações suaves, hover effects e scroll horizontal
 
 ---
